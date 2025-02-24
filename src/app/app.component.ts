@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'shery';
+  textConfig = {
+    message: 'Hello, Angular!',
+    fontSize: '30px',
+    fontColor: 'blue',
+    fontFamily: 'Courier New, monospace',
+    fontWeight: 'bold',
+    positionX: '150px',
+    positionY: '250px'
+  };
 }
