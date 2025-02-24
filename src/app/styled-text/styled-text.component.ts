@@ -16,7 +16,7 @@ export class StyledTextComponent {
     positionX: string;
     positionY: string;
   } = {
-    message: 'Default Text',
+    message: 'DefaultText',
     fontSize: '24px',
     fontColor: '#ff5733',
     fontFamily: 'Arial, sans-serif',
