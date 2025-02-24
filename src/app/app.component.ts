@@ -15,4 +15,14 @@ export class AppComponent {
     positionX: '150px',
     positionY: '250px'
   };
+  lineConfig = {
+    x: '200px',         // X-coordinate
+    y: '100px',         // Y-coordinate
+    length: '100px',    // Length of the line
+    height: '1px',      // Thickess of the line
+    width: '100px',     // Width of the line
+    rotation: '90deg',  // Rotation angle
+    color: 'grey'        // Line color
+  };
+
 }
