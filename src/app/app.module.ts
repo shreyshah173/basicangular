@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { StyledTextComponent } from './styled-text/styled-text.component';
 // import { LineChartComponent } from './line-chart/line-chart.component';
 import { LineComponent } from './line/line.component';
-// import { HighchartsChartModule } from 'angular-highcharts'; // ✅ Import Highcharts module
 
 
 @NgModule({
@@ -19,7 +18,6 @@ import { LineComponent } from './line/line.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // HighchartsChartModule // ✅ Add HighchartsChartModule
 
   ],
   providers: [],
