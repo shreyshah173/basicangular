@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   textConfig = {
     message: 'Hello, Angular!',
@@ -12,8 +13,8 @@ export class AppComponent {
     fontColor: 'blue',
     fontFamily: 'Courier New, monospace',
     fontWeight: 'bold',
-    positionX: '150px',
-    positionY: '250px'
+    positionX: '150px',     // X-coordinate
+    positionY: '250px'      // Y-coordinate
   };
   lineConfig = {
     x: '200px',         // X-coordinate
@@ -22,7 +23,6 @@ export class AppComponent {
     height: '1px',      // Thickess of the line
     width: '100px',     // Width of the line
     rotation: '90deg',  // Rotation angle
-    color: 'grey'        // Line color
+    color: 'grey'       // Line color
   };
-
 }
