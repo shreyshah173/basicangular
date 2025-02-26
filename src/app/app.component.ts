@@ -17,11 +17,11 @@ export class AppComponent {
     positionY: '250px'      // Y-coordinate
   };
   lineConfig = {
-    x: '200px',         // X-coordinate
-    y: '100px',         // Y-coordinate
+    x: '500px',         // X-coordinate
+    y: '300px',         // Y-coordinate
     length: '100px',    // Length of the line
     height: '1px',      // Thickess of the line
-    width: '100px',     // Width of the line
+    width: '500px',     // Width of the line
     rotation: '90deg',  // Rotation angle
     color: 'grey'       // Line color
   };
