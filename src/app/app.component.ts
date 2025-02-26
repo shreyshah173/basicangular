@@ -25,5 +25,4 @@ export class AppComponent {
     rotation: '90deg',  // Rotation angle
     color: 'grey'       // Line color
   };
-  
 }
