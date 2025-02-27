@@ -38,11 +38,11 @@ export class AppComponent {
   }; 
   humidityConfig = {
     humidity: 65,      // Humidity value
-    x: '20vw',        // X position (responsive)
-    y: '50vh',        // Y position (responsive)
-    magFac: 1.8,      // Magnification factor
-    width: '12vw',    // Width of the component
-    height: '4vw',    // Height of the component
-    iconSize: '2.5vw' // Size of the water drop icon
+    x: '60vw',        // X position (responsive)
+    y: '60vh',        // Y position (responsive)
+    magFac: 1.5,      // Magnification factor
+    width: '14vw',    // Width of the component
+    height: '5vw',    // Height of the component
+    iconSize: '3vw' // Size of the water drop icon
   };  
 }
