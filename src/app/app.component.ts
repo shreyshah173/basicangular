@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   textConfig = {
     message: 'Hello, Angular!',
-    fontSize: '30px',
+    fontSize: '1em',
     fontColor: 'blue',
     fontFamily: 'Courier New, monospace',
     fontWeight: 'bold',
@@ -17,12 +17,23 @@ export class AppComponent {
     positionY: '250px'      // Y-coordinate
   };
   lineConfig = {
-    x: '500px',         // X-coordinate
-    y: '300px',         // Y-coordinate
-    length: '100px',    // Length of the line
-    height: '1px',      // Thickess of the line
-    width: '500px',     // Width of the line
-    rotation: '90deg',  // Rotation angle
-    color: 'grey'       // Line color
+    x: '32%',          // X-coordinate (Centered)
+    y: '30vh',         // Y-coordinate
+    marginTop: '20vh', // Extra margin from top
+    length: '10vw',    // Length
+    height: '0.2vh',   // Thickness
+    width: '35vw',     // Width
+    rotation: '90deg', // Rotation
+    color: 'grey',     // Color
+    scaleFactor: 1     // Scaling factor
   };
+  temperatureConfig = {
+    temperature: 25.2,  // Temperature value
+    x: '25vw',         // X position (responsive)
+    y: '60vh',          // Y position (responsive)
+    magFac: 1.5,         // Magnification factor
+    width: '15vw',     // Width of the component
+    height: '5vw',     // Height of the component
+    iconSize: '3vw'    // Size of the thermostat icon
+  }; 
 }

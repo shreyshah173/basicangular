@@ -8,6 +8,10 @@ import { LineComponent } from './line/line.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { HighchartsComponent } from './highcharts/highcharts.component';
 import { AirQualityIndexComponent } from './air-quality-index/air-quality-index.component';
+import { LastUpdatedTimeComponent } from './last-updated-time/last-updated-time.component';
+import { ThermostatDisplayComponent } from './thermostat-display/thermostat-display.component';
+import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -17,12 +21,17 @@ import { AirQualityIndexComponent } from './air-quality-index/air-quality-index.
     // LineChartComponent,
     LineComponent,
     HighchartsComponent,
-    AirQualityIndexComponent
+    AirQualityIndexComponent,
+    LastUpdatedTimeComponent,
+    ThermostatDisplayComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    MatIconModule,
+    BrowserAnimationsModule, // Import Material Icons Module
+
   ],
   providers: [],
   bootstrap: [AppComponent]

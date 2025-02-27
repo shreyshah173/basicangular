@@ -1,13 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-line',
   templateUrl: './line.component.html',
   styleUrls: ['./line.component.css']
 })
-export class LineComponent {
-  // Accept a single object containing all line properties
-  @Input() lineConfig: { 
+export class LineComponent implements OnChanges {
+  @Input() lineConfig!: {
     x: string;
     y: string;
     length: string;
@@ -15,26 +14,29 @@ export class LineComponent {
     width: string;
     rotation: string;
     color: string;
-  } = {
-    x: '100px',
-    y: '100px',
-    length: '200px',
-    height: '2px',
-    width: '200px',
-    rotation: '0deg',
-    color: 'black'
+    scaleFactor: number;
+    marginTop?: string; // New property for margin
   };
 
-  // Function returning styles dynamically
-  getStyles() {
-    return {
+  responsiveStyles: any = {};
+
+  ngOnChanges() {
+    this.updateStyles();
+  }
+
+  updateStyles() {
+    const scale = this.lineConfig.scaleFactor || 1;
+    const marginTop = this.lineConfig.marginTop || '0vh';
+
+    this.responsiveStyles = {
       'position': 'absolute',
       'left': this.lineConfig.x,
-      'top': this.lineConfig.y,
-      'width': this.lineConfig.width,
-      'height': this.lineConfig.height,
+      'top': `calc(${this.lineConfig.y} + ${marginTop})`, // Add margin to top
+      'width': `calc(${this.lineConfig.width} * ${scale})`,
+      'height': `calc(${this.lineConfig.height} * ${scale})`,
       'background-color': this.lineConfig.color,
-      'transform': `rotate(${this.lineConfig.rotation})`
+      'transform': `rotate(${this.lineConfig.rotation})`,
+      'transform-origin': 'center'
     };
   }
 }

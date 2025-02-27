@@ -1,0 +1,9 @@
+.time-container {
+  width: calc(150px * var(--magFac));
+  height: calc(50px * var(--magFac));
+}
+
+.time-container p {
+  font-size: calc(14px * var(--magFac));
+  margin: 0;
+}

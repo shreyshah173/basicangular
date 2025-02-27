@@ -1,5 +1,7 @@
 <highcharts-chart
   [Highcharts]="Highcharts"
   [options]="chartOptions"
-  style="width: 100%; height: 100px; display: block;">
+  [style.width.%]="100 * magFac * magWid"
+  [style.height.px]="100 * magHei * magFac "
+  style="display: block;">
 </highcharts-chart>

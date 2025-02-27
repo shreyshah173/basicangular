@@ -14,13 +14,16 @@ if (typeof HeatmapModule === 'function') {
 })
 export class AirQualityIndexComponent {
   Highcharts = Highcharts;
+  magFac = 1;
+  magWid = 1;
+  magHei = 1;
   chartOptions: Highcharts.Options = {
     chart: {
       type: 'heatmap',
       marginTop: 20,
       marginBottom: 40,
       plotBorderWidth: 1,
-      height: 100
+      height: 100 * this.magFac // ✅ Multiply by magFac
     },
     title: {
       text: ''
