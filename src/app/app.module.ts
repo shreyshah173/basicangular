@@ -12,6 +12,7 @@ import { LastUpdatedTimeComponent } from './last-updated-time/last-updated-time.
 import { ThermostatDisplayComponent } from './thermostat-display/thermostat-display.component';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HumidityDisplayComponent } from './humidity-display/humidity-display.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HighchartsComponent,
     AirQualityIndexComponent,
     LastUpdatedTimeComponent,
-    ThermostatDisplayComponent
+    ThermostatDisplayComponent,
+    HumidityDisplayComponent
   ],
   imports: [
     BrowserModule,
