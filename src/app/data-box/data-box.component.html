@@ -1,0 +1,8 @@
+<div class="data-box">
+    <div class="header">{{ symbol }}</div>
+    <div class="value">{{ value.toFixed(2) }}</div>
+    <div class="progress-bar">
+        <div class="progress" [style.width]="getProgressBarWidth()"></div>
+    </div>
+    <div class="unit">{{ unit }}</div>
+</div>

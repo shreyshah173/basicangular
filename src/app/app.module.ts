@@ -14,6 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HumidityDisplayComponent } from './humidity-display/humidity-display.component';
 import { ImageDisplayComponent } from './image-display/image-display.component';
+import { DataBoxComponent } from './data-box/data-box.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ImageDisplayComponent } from './image-display/image-display.component';
     LastUpdatedTimeComponent,
     ThermostatDisplayComponent,
     HumidityDisplayComponent,
-    ImageDisplayComponent
+    ImageDisplayComponent,
+    DataBoxComponent
   ],
   imports: [
     BrowserModule,

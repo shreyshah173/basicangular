@@ -1,16 +1,16 @@
 <!-- <app-humidity-display [config]="humidityConfig"></app-humidity-display>
 -->
-<app-line [lineConfig]="lineConfig"></app-line> 
+<!-- <app-line [lineConfig]="lineConfig"></app-line>  -->
 <!--
     <app-highcharts></app-highcharts> -->
-    
-    
-    <!-- <app-styled-text [textConfig]="textConfig"></app-styled-text> -->
-    
-    <!-- <app-air-quality-index></app-air-quality-index> -->
-    <!-- <app-air-quality-index [config]="airQualityConfig"></app-air-quality-index> -->
-    
-    <!-- <!DOCTYPE html>
+
+
+<!-- <app-styled-text [textConfig]="textConfig"></app-styled-text> -->
+
+<!-- <app-air-quality-index></app-air-quality-index> -->
+<!-- <app-air-quality-index [config]="airQualityConfig"></app-air-quality-index> -->
+
+<!-- <!DOCTYPE html>
     <html lang="en">
         <head>
             <meta charset="UTF-8">
@@ -112,4 +112,14 @@
 <!-- <app-thermostat-display [config]="temperatureConfig"></app-thermostat-display> -->
 
 
-<app-image-display [config]="imageConfig"></app-image-display>
+<!-- <app-image-display [config]="imageConfig"></app-image-display> -->
+
+<div class="data-boxes">
+    <app-data-box symbol="CO" unit="mg/m³" [value]="0.51" [maxValue]="10"></app-data-box>
+    <app-data-box symbol="CO" unit="mg/m³" [value]="0.51" [maxValue]="10"></app-data-box>
+    <app-data-box symbol="CO" unit="mg/m³" [value]="0.51" [maxValue]="10"></app-data-box>
+    <app-data-box symbol="CO" unit="mg/m³" [value]="0.51" [maxValue]="5"></app-data-box>
+    <app-data-box symbol="NO₂" unit="µg/m³" [value]="4.35" [maxValue]="100"></app-data-box>
+    <app-data-box symbol="O₃" unit="µg/m³" [value]="54.66" [maxValue]="1000"></app-data-box>
+    <app-data-box symbol="NO" unit="ppb" [value]="10.13" [maxValue]="200"></app-data-box>
+</div>
