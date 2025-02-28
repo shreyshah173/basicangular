@@ -45,4 +45,12 @@ export class AppComponent {
     height: '5vw',    // Height of the component
     iconSize: '3vw' // Size of the water drop icon
   };  
+  imageConfig = {
+    src: 'assets/download.png', // Path to image
+    x: '20vw',      // X position (responsive)
+    y: '15vh',      // Y position (responsive)
+    magFac: 1.5,    // Magnification factor
+    rotation: '45deg' // Rotation angle
+  };
+  
 }

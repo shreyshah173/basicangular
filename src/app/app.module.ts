@@ -13,6 +13,7 @@ import { ThermostatDisplayComponent } from './thermostat-display/thermostat-disp
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HumidityDisplayComponent } from './humidity-display/humidity-display.component';
+import { ImageDisplayComponent } from './image-display/image-display.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { HumidityDisplayComponent } from './humidity-display/humidity-display.co
     AirQualityIndexComponent,
     LastUpdatedTimeComponent,
     ThermostatDisplayComponent,
-    HumidityDisplayComponent
+    HumidityDisplayComponent,
+    ImageDisplayComponent
   ],
   imports: [
     BrowserModule,
