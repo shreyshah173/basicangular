@@ -1,9 +1,18 @@
 .time-container {
-  width: calc(150px * var(--magFac));
+  width: calc(200px * var(--magFac));
   height: calc(50px * var(--magFac));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: calc(5px * var(--magFac));
 }
 
 .time-container p {
-  font-size: calc(14px * var(--magFac));
+  font-size: calc(2vw * var(--textScale)); /* Adjusts with screen width */
+  line-height: 1.2;
+  /* font-weight: bold; */
   margin: 0;
+  word-wrap: break-word;
+  white-space: nowrap;
 }

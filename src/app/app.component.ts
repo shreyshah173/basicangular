@@ -8,22 +8,21 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   textConfig = {
-    message: 'Hello, Responsive World!',
-    size: 1.5,  // Base size that will scale with screen width
+    message: 'This is the topic',
+    size: 20,  // Base size that will scale with screen width
     fontColor: 'blue',
     fontFamily: 'Arial, sans-serif',
     fontWeight: 'bold',
     positionX: 30, // % of screen width
     positionY: 1  // % of screen height
   };
-  
   lineConfig = {
-    x: '32%',          // X-coordinate (Centered)
-    y: '30vh',         // Y-coordinate
+    x: '33%',          // X-coordinate (Centered)
+    y: '28vh',         // Y-coordinate
     marginTop: '20vh', // Extra margin from top
     length: '10vw',    // Length
     height: '0.2vh',   // Thickness
-    width: '35vw',     // Width
+    width: '30vw',     // Width
     rotation: '90deg', // Rotation
     color: 'grey',     // Color
     scaleFactor: 1     // Scaling factor
@@ -53,5 +52,4 @@ export class AppComponent {
     magFac: 1.5,    // Magnification factor
     rotation: '45deg' // Rotation angle
   };
-  
 }

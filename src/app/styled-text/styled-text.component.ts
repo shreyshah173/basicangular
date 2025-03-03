@@ -32,7 +32,7 @@ export class StyledTextComponent implements OnInit {
     const screenHeight = window.innerHeight;
 
     this.dynamicStyles = {
-      'font-size': `${(this.textConfig.size / 40) * screenWidth}px`, // Scale font size
+      'font-size': `${(this.textConfig.size) * screenWidth/screenHeight}px`, // Scale font size
       'color': this.textConfig.fontColor,
       'font-family': this.textConfig.fontFamily,
       'font-weight': this.textConfig.fontWeight,

@@ -52,10 +52,11 @@ import { Component, Input, OnInit } from '@angular/core';
 export class LastUpdatedTimeComponent implements OnInit {
   @Input() lastUpdated!: string; // Timestamp in ISO format
   @Input() magFac: number = 1;   // Scale factor for size
-  @Input() x: number = 100;      // X position
-  @Input() y: number = 100;      // Y position
+  @Input() x: number = 30;      // X position
+  @Input() y: number = 70;      // Y position
   @Input() textColor: string = '#333'; // Text color
-  
+  @Input() textScale = 1;
+
   lastUpdatedText: string = '';
 
   ngOnInit() {
