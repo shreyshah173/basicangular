@@ -22,7 +22,7 @@ export class AppComponent {
     marginTop: '20vh', // Extra margin from top
     length: '10vw',    // Length
     height: '0.2vh',   // Thickness
-    width: '30vw',     // Width
+    width: '65vh',     // Width
     rotation: '90deg', // Rotation
     color: 'grey',     // Color
     scaleFactor: 1     // Scaling factor
