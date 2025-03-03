@@ -10,6 +10,7 @@ export class DataBoxComponent {
   @Input() unit!: string;      // Measurement unit (e.g., mg/m³, ppb)
   @Input() value!: number;     // Numeric value
   @Input() maxValue!: number;  // Max value for progress bar
+  @Input() color!: string;     // Color for value text and progress bar
 
   getProgressBarWidth(): string {
     return `${(this.value / this.maxValue) * 100}%`;
