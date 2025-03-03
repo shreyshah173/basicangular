@@ -8,14 +8,15 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   textConfig = {
-    message: 'Hello, Angular!',
-    fontSize: '1em',
+    message: 'Hello, Responsive World!',
+    size: 1.5,  // Base size that will scale with screen width
     fontColor: 'blue',
-    fontFamily: 'Courier New, monospace',
+    fontFamily: 'Arial, sans-serif',
     fontWeight: 'bold',
-    positionX: '150px',     // X-coordinate
-    positionY: '250px'      // Y-coordinate
+    positionX: 30, // % of screen width
+    positionY: 1  // % of screen height
   };
+  
   lineConfig = {
     x: '32%',          // X-coordinate (Centered)
     y: '30vh',         // Y-coordinate

@@ -1,4 +1,5 @@
 .data-boxes {
+    margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;

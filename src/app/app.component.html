@@ -5,9 +5,8 @@
     <app-highcharts></app-highcharts> -->
 
 
-<!-- <app-styled-text [textConfig]="textConfig"></app-styled-text> -->
-
-<!-- <app-air-quality-index></app-air-quality-index> -->
+    
+    <!-- <app-air-quality-index></app-air-quality-index> -->
 <!-- <app-air-quality-index [config]="airQualityConfig"></app-air-quality-index> -->
 
 <!-- <!DOCTYPE html>
@@ -23,62 +22,62 @@
                     max-width: 800px;
                     border-collapse: collapse;
                     margin: 20px 0;
-                }
-                
-                .aqi-row {
-                    display: flex;
-                    width: 100%;
-                }
+                    }
+                    
+                    .aqi-row {
+                        display: flex;
+                        width: 100%;
+                        }
                 
                 .aqi-category {
                     padding: 10px;
                     text-align: center;
                     font-weight: bold;
                     color: white;
-                }
-                
-                .aqi-value {
-                    padding: 5px 10px;
-                    text-align: center;
-                    font-weight: bold;
-                }
-                
-                .good {
-                    background-color: #6EC566;
-                    flex: 1;
-                }
+                    }
+                    
+                    .aqi-value {
+                        padding: 5px 10px;
+                        text-align: center;
+                        font-weight: bold;
+                        }
+                        
+                        .good {
+                            background-color: #6EC566;
+                            flex: 1;
+                            }
         
-                .satisfactory {
-                    background-color: #BCDD69;
-                    flex: 1;
-                }
-                
-                .moderate {
-                    background-color: #FFDE33;
-                    flex: 2;
-                }
-                
-                .poor {
-                    background-color: #FF9933;
+                            .satisfactory {
+                                background-color: #BCDD69;
+                                flex: 1;
+                                }
+                                
+                                .moderate {
+                                    background-color: #FFDE33;
+                                    flex: 2;
+                                    }
+                                    
+                                    .poor {
+                                        background-color: #FF9933;
                     flex: 2;
                 }
                 
                 .very-poor {
                     background-color: #F55050;
                     flex: 2;
-                }
-                
-                .severe {
-                    background-color: #A7383D;
-                    flex: 2;
-                }
-            </style>
-        </head>
-        <body>
-            <div class="aqi-chart">
-        <div class="aqi-row">
-            <div class="aqi-category good">Good</div>
-            <div class="aqi-category satisfactory">Satisfactory</div>
+                    }
+                    
+                    .severe {
+                        background-color: #A7383D;
+                        flex: 2;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="aqi-chart">
+                        <div class="aqi-row">
+                            <div class="aqi-category good">Good</div>
+                            <div class="aqi-category satisfactory">Satisfactory</div>
             <div class="aqi-category moderate">Moderate</div>
             <div class="aqi-category poor">Poor</div>
             <div class="aqi-category very-poor">Very poor</div>
@@ -114,6 +113,7 @@
 
 <!-- <app-image-display [config]="imageConfig"></app-image-display> -->
 
+<app-styled-text [textConfig]="textConfig"></app-styled-text>
 <div class="data-boxes">
     <app-data-box symbol="CO"  unit="mg/m³" [value]="0.51"  [maxValue]="10" color="blue">   </app-data-box>
     <app-data-box symbol="CO₂"  unit="mg/m³" [value]="0.45"  [maxValue]="5"  color="purple"> </app-data-box>
