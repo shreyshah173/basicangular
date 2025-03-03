@@ -55,7 +55,7 @@ export class LastUpdatedTimeComponent implements OnInit {
   @Input() x: number = 30;      // X position
   @Input() y: number = 70;      // Y position
   @Input() textColor: string = '#333'; // Text color
-  @Input() textScale = 1;
+  @Input() textScale = 3;
 
   lastUpdatedText: string = '';
 

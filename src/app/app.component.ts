@@ -9,11 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   textConfig = {
     message: 'This is the topic',
-    size: 20,  // Base size that will scale with screen width
+    size: 50,  // Base size that will scale with screen width
     fontColor: 'blue',
     fontFamily: 'Arial, sans-serif',
     fontWeight: 'bold',
-    positionX: 30, // % of screen width
+    positionX: 40, // % of screen width
     positionY: 1  // % of screen height
   };
   lineConfig = {
@@ -31,7 +31,7 @@ export class AppComponent {
     temperature: 25.2,  // Temperature value
     x: '25vw',         // X position (responsive)
     y: '60vh',          // Y position (responsive)
-    magFac: 1.5,         // Magnification factor
+    magFac: 2.5,         // Magnification factor
     width: '15vw',     // Width of the component
     height: '5vw',     // Height of the component
     iconSize: '3vw'    // Size of the thermostat icon
