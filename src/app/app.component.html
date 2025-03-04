@@ -133,11 +133,17 @@
       <app-styled-text [textConfig]="textConfig"></app-styled-text>
     </div>
   
-    <!-- Temperature and Humidity Section -->
+    <!-- Temperature, Line, and Humidity Section -->
     <div class="temp-humidity">
-      <app-thermostat-display [config]="temperatureConfig"></app-thermostat-display>
-      <app-line [lineConfig]="lineConfig"></app-line>
-      <app-humidity-display [config]="humidityConfig"></app-humidity-display>
+      <div class="thermostat">
+        <app-thermostat-display [config]="temperatureConfig"></app-thermostat-display>
+      </div>
+      <div class="divider">
+        <app-line [lineConfig]="lineConfig"></app-line>
+      </div>
+      <div class="humidity">
+        <app-humidity-display [config]="humidityConfig"></app-humidity-display>
+      </div>    
     </div>
   
     <!-- Highcharts Section -->
