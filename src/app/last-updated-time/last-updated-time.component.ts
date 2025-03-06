@@ -47,21 +47,19 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-last-updated-time',
   templateUrl: './last-updated-time.component.html',
-  styleUrls: ['./last-updated-time.component.css']
+  styleUrls: [] // No need for an external CSS file
 })
 export class LastUpdatedTimeComponent implements OnInit {
   @Input() lastUpdated!: string; // Timestamp in ISO format
-  @Input() magFac: number = 1;   // Scale factor for size
-  @Input() x: number = 30;      // X position
-  @Input() y: number = 70;      // Y position
-  @Input() textColor: string = '#333'; // Text color
-  @Input() textScale = 1;
-  
-
+  @Input() textColor: string = '#000'; // Default text color
+  @Input() textScale: number = 1; // Scale factor for text size
+  @Input() magFac : number = 1;
   lastUpdatedText: string = '';
+  textStyles: { [key: string]: string } = {}; // Dynamic styles
 
   ngOnInit() {
     this.updateLastUpdatedText();
+    this.setTextStyles();
     setInterval(() => this.updateLastUpdatedText(), 60000); // Update every 1 min
   }
 
@@ -84,5 +82,19 @@ export class LastUpdatedTimeComponent implements OnInit {
     } else {
       this.lastUpdatedText = `Last updated: ${diffSeconds} second${diffSeconds > 1 ? 's' : ''} ago`;
     }
+  }
+
+  setTextStyles() {
+    this.textStyles = {
+      'position': 'absolute',
+      'left': '50vw', // Center horizontally
+      'top': '90vh', // Center vertically
+      'transform': 'translate(-50%, -50%)', // Ensure exact centering
+      'font-size': `${this.textScale * 2}vw`, // Scale based on viewport width
+      'color': this.textColor,
+      'white-space': 'nowrap', // Prevent text from wrapping
+      'font-weight': 'bold',
+      'text-align': 'center',
+    };
   }
 }

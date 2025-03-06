@@ -1,13 +1,1 @@
-<div 
-  class="time-container"
-  [ngStyle]="{
-    '--magFac': magFac,
-    '--textScale': textScale,
-    'color': textColor,
-    'position': 'absolute',
-    'left': x + 'vw',
-    'top': y + 'vh'
-  }"
->
-  <p>{{ lastUpdatedText }}</p>
-</div>
+<p [ngStyle]="textStyles">{{ lastUpdatedText }}</p>
