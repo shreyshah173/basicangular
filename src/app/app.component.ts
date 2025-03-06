@@ -13,7 +13,7 @@ export class AppComponent {
     fontColor: 'blue',
     fontFamily: 'Arial, sans-serif',
     fontWeight: 'bold',
-    positionX: 30, // % of screen width
+    positionX: 40, // % of screen width
     positionY: 1  // % of screen height
   };
   lineConfig = {
