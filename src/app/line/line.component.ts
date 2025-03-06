@@ -34,9 +34,9 @@ export class LineComponent implements OnChanges {
 
     // Default values when toScale is false
     const defaultStyles = {
-      height: '450px',
+      height: '150px',
       width: '1.5px',
-      left: '500px',
+      left: '100px',
       top: '100px'
     };
     // console.log(this.lineConfig.marginTop);

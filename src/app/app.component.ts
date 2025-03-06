@@ -17,13 +17,13 @@ export class AppComponent {
     positionY: 1  // % of screen height
   };
   lineConfig = {
-    x: '30vw',          // X-coordinate (Centered)
-    y: '10vh',         // Y-coordinate
-    // marginTop: '20vh', // Extra margin from top
+    x: '50vw',         // X-coordinate (Centered)
+    y: '20vh',         // Y-coordinate
+    //marginTop:'20vh',// Extra margin from top
     length: '10vw',    // Length
-    height: '65vh',   // Thickness
-    width: '0.1vw',     // Width
-    rotation: '0deg', // Rotation
+    height: '65vh',    // Thickness
+    width: '0.1vw',    // Width
+    rotation: '0deg',  // Rotation
     color: 'grey',     // Color
     scaleFactor: 1     // Scaling factor
   };
