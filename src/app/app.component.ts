@@ -30,7 +30,7 @@ export class AppComponent {
   temperatureConfig = {
     temperature: 25.2,  // Temperature value
     x: '25vw',         // X position (responsive)
-    y: '60vh',          // Y position (responsive)
+    y: '75vh',          // Y position (responsive)
     magFac: 1.5,         // Magnification factor
     width: '15vw',     // Width of the component
     height: '5vw',     // Height of the component
@@ -39,7 +39,7 @@ export class AppComponent {
   humidityConfig = {
     humidity: 65,      // Humidity value
     x: '60vw',        // X position (responsive)
-    y: '60vh',        // Y position (responsive)
+    y: '75vh',        // Y position (responsive)
     magFac: 1.5,      // Magnification factor
     width: '14vw',    // Width of the component
     height: '5vw',    // Height of the component

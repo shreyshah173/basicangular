@@ -1,20 +1,19 @@
 .box {
     position: absolute;
-    width: 9vw;  /* 10% of viewport width */
-    height: 16vh; /* 10% of viewport height */
-    background-color: red;
-  
-    left: 10vw; /* Moves the box 50% across the viewport width */
-    top: 10vh;  /* Moves the box 50% down the viewport height */
+    width: 30vw;  /* 10% of viewport width */
+    height: 50vh; /* 10% of viewport height */
+    border: 2px solid black;  
+    left: 12vw; /* Moves the box 50% across the viewport width */
+    top: 22vh;  /* Moves the box 50% down the viewport height */
   }
   
   .box1 {
     position: absolute;
-    width: 10vw;  /* 10% of viewport width */
-    height: 10vh; /* 10% of viewport height */
-    background-color: red;
+    width: 30vw;  /* 10% of viewport width */
+    height: 50vh; /* 10% of viewport height */
+    border: 2px solid black;  
   
-    left: 50vw; /* Moves the box 50% across the viewport width */
-    top: 50vh;  /* Moves the box 50% down the viewport height */
+    left: 60vw; /* Moves the box 50% across the viewport width */
+    top: 22vh;  /* Moves the box 50% down the viewport height */
   }
   

@@ -1,13 +1,13 @@
 <app-humidity-display [config]="humidityConfig"></app-humidity-display>
 
 <!-- <app-line [lineConfig]="lineConfig"></app-line> 
-<app-highcharts></app-highcharts>  -->
+  -->
 <!--
     -->
 
 
-    
-    <!-- <app-air-quality-index></app-air-quality-index> -->
+
+<!-- <app-air-quality-index></app-air-quality-index> -->
 <!-- <app-air-quality-index [config]="airQualityConfig"></app-air-quality-index> -->
 
 
@@ -40,9 +40,13 @@
 
 
 
-<div class="box"></div>
+<div class="box">
+  <app-highcharts></app-highcharts>
+</div>
 <app-line [lineConfig]="lineConfig" [toScale]="true"></app-line>
-<div class="box1"></div>
+<div class="box1">
+  <app-highcharts></app-highcharts>
+</div>
 <app-last-updated-time [lastUpdated]="'2025-03-06T03:13:00Z'" [magFac]="2"></app-last-updated-time>
 
 
@@ -71,4 +75,3 @@
     </div>
   
   </div> -->
-  
