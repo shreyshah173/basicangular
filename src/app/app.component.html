@@ -126,14 +126,18 @@
 
 
 
-<div class="grid-container">
+<div class="box"></div>
+<app-line [lineConfig]="lineConfig" [toScale]="true"></app-line>
+<div class="box1"></div>
+
+
+
+<!-- <div class="grid-container">
   
-    <!-- Header Text -->
     <div class="header">
       <app-styled-text [textConfig]="textConfig"></app-styled-text>
     </div>
   
-    <!-- Temperature, Line, and Humidity Section -->
     <div class="temp-humidity">
       <div class="thermostat">
         <app-thermostat-display [config]="temperatureConfig"></app-thermostat-display>
@@ -146,16 +150,10 @@
       </div>    
     </div>
   
-    <!-- Highcharts Section -->
-    <!-- <div class="charts">
-      <app-highcharts></app-highcharts>
-      <app-air-quality-index [config]="airQualityConfig"></app-air-quality-index>
-    </div> -->
   
-    <!-- Last Updated Time -->
     <div class="last-updated">
       <app-last-updated-time [lastUpdated]="'2025-03-03T03:13:00Z'" [magFac]="3"></app-last-updated-time>
     </div>
   
-  </div>
+  </div> -->
   

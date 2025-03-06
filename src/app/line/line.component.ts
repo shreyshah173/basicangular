@@ -15,8 +15,10 @@ export class LineComponent implements OnChanges {
     rotation: string;
     color: string;
     scaleFactor: number;
-    marginTop?: string; // New property for margin
+    marginTop?: string;
   };
+
+  @Input() toScale: boolean = true; // New property to control scaling
 
   responsiveStyles: any = {};
 
@@ -28,14 +30,25 @@ export class LineComponent implements OnChanges {
     const scale = this.lineConfig.scaleFactor || 1;
     const marginTop = this.lineConfig.marginTop || '0vh';
 
+    console.log('screen width is: ', window.innerWidth);
+
+    // Default values when toScale is false
+    const defaultStyles = {
+      height: '450px',
+      width: '1.5px',
+      left: '500px',
+      top: '100px'
+    };
+    // console.log(this.lineConfig.marginTop);
+    
     this.responsiveStyles = {
-      'position': 'absolute',
-      'left': this.lineConfig.x,
-      'top': `calc(${this.lineConfig.y} + ${marginTop})`, // Add margin to top
-      'width': `calc(${this.lineConfig.width} * ${scale})`,
-      'height': `calc(${this.lineConfig.height} * ${scale})`,
+      position: 'relative',
+      left: this.toScale ? this.lineConfig.x : defaultStyles.left,
+      top: this.toScale ? `calc(${this.lineConfig.y} + ${marginTop})` : defaultStyles.top,
+      width: this.toScale ? this.lineConfig.width : defaultStyles.width,
+      height: this.toScale ? this.lineConfig.height : defaultStyles.height,
       'background-color': this.lineConfig.color,
-      'transform': `rotate(${this.lineConfig.rotation})`,
+      transform: `rotate(${this.lineConfig.rotation})`,
       'transform-origin': 'center'
     };
   }
