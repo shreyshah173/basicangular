@@ -16,7 +16,7 @@ export class HighchartsComponent {
       text: 'Monthly Sales Data'
     },
     xAxis: {
-      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul','Aug','Sep','Oct','Nov','Dec']
     },
     yAxis: {
       title: {
@@ -27,7 +27,7 @@ export class HighchartsComponent {
       {
         name: 'Sales',
         type: 'line',
-        data: [5000, 7000, 8000, 12000, 15000, 18000] // Your data points
+        data: [5000, 7000, 8000, 12000, 15000, 18000,15000,13000,12000,40000,30000,20000] // Your data points
       }
     ]
   };
