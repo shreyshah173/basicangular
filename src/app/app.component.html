@@ -1,5 +1,3 @@
-<app-humidity-display [config]="humidityConfig"></app-humidity-display>
-
 <!-- <app-line [lineConfig]="lineConfig"></app-line> 
   -->
 <!--
@@ -23,22 +21,51 @@
 
 <!-- <app-thermostat-display [temperature]="25"></app-thermostat-display> -->
 
-<!-- <app-thermostat-display [config]="temperatureConfig"></app-thermostat-display> -->
 
 
 <!-- <app-image-display [config]="imageConfig"></app-image-display> -->
 
-<app-styled-text [textConfig]="textConfig"></app-styled-text>
 <!-- <div class="data-boxes">
-    <app-data-box symbol="CO"  unit="mg/m³" [value]="0.51"  [maxValue]="10" color="blue">   </app-data-box>
-    <app-data-box symbol="CO₂"  unit="mg/m³" [value]="0.45"  [maxValue]="5"  color="purple"> </app-data-box>
-    <app-data-box symbol="CO₃"  unit="mg/m³" [value]="0.78"  [maxValue]="10" color="red">    </app-data-box>
-    <app-data-box symbol="NO₂" unit="µg/m³" [value]="4.35"  [maxValue]="100" color="orange"></app-data-box>
-    <app-data-box symbol="O₃"  unit="µg/m³" [value]="54.66" [maxValue]="1000" color="brown"></app-data-box>
-    <app-data-box symbol="NO"  unit="ppb"   [value]="10.13" [maxValue]="200" color="cyan">  </app-data-box>
+  <app-data-box symbol="CO"  unit="mg/m³" [value]="0.51"  [maxValue]="10" color="blue">   </app-data-box>
+  <app-data-box symbol="CO₂"  unit="mg/m³" [value]="0.45"  [maxValue]="5"  color="purple"> </app-data-box>
+  <app-data-box symbol="CO₃"  unit="mg/m³" [value]="0.78"  [maxValue]="10" color="red">    </app-data-box>
+  <app-data-box symbol="NO₂" unit="µg/m³" [value]="4.35"  [maxValue]="100" color="orange"></app-data-box>
+  <app-data-box symbol="O₃"  unit="µg/m³" [value]="54.66" [maxValue]="1000" color="brown"></app-data-box>
+  <app-data-box symbol="NO"  unit="ppb"   [value]="10.13" [maxValue]="200" color="cyan">  </app-data-box>
 </div> -->
 
 
+
+
+
+
+<!-- <div class="grid-container">
+  
+  <div class="header">
+    <app-styled-text [textConfig]="textConfig"></app-styled-text>
+  </div>
+  
+  <div class="temp-humidity">
+    <div class="thermostat">
+      <app-thermostat-display [config]="temperatureConfig"></app-thermostat-display>
+    </div>
+      <div class="divider">
+        <app-line [lineConfig]="lineConfig"></app-line>
+      </div>
+      <div class="humidity">
+        <app-humidity-display [config]="humidityConfig"></app-humidity-display>
+      </div>    
+    </div>
+    
+    
+    <div class="last-updated">
+      <app-last-updated-time [lastUpdated]="'2025-03-03T03:13:00Z'" [magFac]="3"></app-last-updated-time>
+    </div>
+    
+  </div> -->
+
+
+<!-- display -->
 
 <div class="box">
   <app-highcharts></app-highcharts>
@@ -47,31 +74,8 @@
 <div class="box1">
   <app-highcharts></app-highcharts>
 </div>
+
 <app-last-updated-time [lastUpdated]="'2025-03-06T03:13:00Z'" [magFac]="2"></app-last-updated-time>
-
-
-
-<!-- <div class="grid-container">
-  
-    <div class="header">
-      <app-styled-text [textConfig]="textConfig"></app-styled-text>
-    </div>
-  
-    <div class="temp-humidity">
-      <div class="thermostat">
-        <app-thermostat-display [config]="temperatureConfig"></app-thermostat-display>
-      </div>
-      <div class="divider">
-        <app-line [lineConfig]="lineConfig"></app-line>
-      </div>
-      <div class="humidity">
-        <app-humidity-display [config]="humidityConfig"></app-humidity-display>
-      </div>    
-    </div>
-  
-  
-    <div class="last-updated">
-      <app-last-updated-time [lastUpdated]="'2025-03-03T03:13:00Z'" [magFac]="3"></app-last-updated-time>
-    </div>
-  
-  </div> -->
+<app-thermostat-display [config]="temperatureConfig"></app-thermostat-display>
+<app-humidity-display [config]="humidityConfig"></app-humidity-display>
+<app-styled-text [textConfig]="textConfig"></app-styled-text>
