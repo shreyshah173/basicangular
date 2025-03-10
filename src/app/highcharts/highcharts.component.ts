@@ -13,19 +13,19 @@ export class HighchartsComponent {
       type: 'line' // 📊 You can change this to 'bar', 'pie', etc.
     },
     title: {
-      text: 'Monthly Sales Data'
+      text: ''
     },
     xAxis: {
       categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul','Aug','Sep','Oct','Nov','Dec']
     },
     yAxis: {
       title: {
-        text: 'Sales (in USD)'
+        text:'' 
       }
     },
     series: [
       {
-        name: 'Sales',
+        name: '',
         type: 'line',
         data: [5000, 7000, 8000, 12000, 15000, 18000,15000,13000,12000,40000,30000,20000] // Your data points
       }

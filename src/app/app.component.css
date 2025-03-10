@@ -1,6 +1,6 @@
 .box {
     position: absolute;
-    width: 50vw;  /* 10% of viewport width */
+    width: 48vw;  /* 10% of viewport width */
     height: 70vh; /* 10% of viewport height */
     /* border: 2px solid black;   */
     left: 8vw; /* Moves the box 50% across the viewport width */
